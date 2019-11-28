@@ -1,0 +1,37 @@
+body, html {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns:auto 80% ;
+    grid-template-rows: 15% auto 9%;
+    grid-template-areas: 
+    "topdown header"
+    "topdown main"
+    "footer footer"
+    ;
+}
+
+aside {
+    grid-area: topdown;
+    background-color: #071e22;
+}
+
+header {
+    grid-area: header;
+    background-color:#1d7874 ;
+    }
+
+
+section {
+    grid-area: main;
+    background-color:
+    #f4c095 ;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #91393b;
+}
